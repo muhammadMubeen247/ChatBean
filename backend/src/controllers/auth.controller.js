@@ -118,7 +118,7 @@ export const updateProfile = async (req,res)=>{
 
 
     }
-    catch{
+    catch(error){
         console.error("Error during profile update:", error);
         res.status(500).send('Internal Server Error');
     }
